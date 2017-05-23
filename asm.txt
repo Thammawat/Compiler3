@@ -1,0 +1,25 @@
+.Ldebug_abbrev0:
+.Ldebug_info0:
+.Ldebug_line0:
+.Ltext0:
+main:
+.LFB0:
+	push    rbp
+.LCFI0:
+	mov     rbp, rsp
+ 
+.LBB2:
+	mov     DWORD PTR [rbp-4], -10
+	mov     eax,DWORD PTR [rbp-4]
+	mov     edx, eax
+	sar     edx, 31
+	shr     edx, 31
+	add     eax, edx
+	and     eax, 1
+	sub     eax, edx
+	mov     DWORD PTR [rbp-8], eax
+.LBE3:
+	mov     eax, 0
+	leave
+.LCFI2:
+	ret
